@@ -3095,7 +3095,7 @@ input, select, textarea {
 
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
-				background-size: auto,							cover;
+				background: none;							cover;
 				bottom: auto;
 				left: auto;
 				padding: 4em 4em 6em 4em;
