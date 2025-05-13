@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -111,19 +111,19 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #49bf9d;
+		color: #fcc57c;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #fcc57c !important;
 			text-decoration: none;
 		}
 
 	strong, b {
-		color: #787878;
-		font-weight: 400;
+		color: #373737;
+		font-weight: 750;
 	}
 
 	em, i {
@@ -132,16 +132,20 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		font-family: "Karla", sans-serif;
+		font-size: 0.625em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
-		font-weight: 400;
+		color: #000000;
+		font-family: "Source Serif 4", serif;
+		font-weight: 300;
 		line-height: 1em;
+		font-size: 1.1em;
 		margin: 0 0 1em 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 		}
@@ -157,7 +161,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.3em;
 		line-height: 1.5em;
 	}
 
@@ -1765,7 +1769,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #b2b2b2;
+		color: #000000;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2065,38 +2069,36 @@ input, select, textarea {
 			text-align: center;
 		}
 
-			.image.thumb:after {
-				-moz-transition: opacity 0.2s ease-in-out;
-				-webkit-transition: opacity 0.2s ease-in-out;
-				-ms-transition: opacity 0.2s ease-in-out;
-				transition: opacity 0.2s ease-in-out;
-				border-radius: 0.35em;
-				border: solid 3px rgba(255, 255, 255, 0.5);
-				color: #fff;
-				content: 'View';
-				display: inline-block;
-				font-size: 0.8em;
-				font-weight: 400;
-				left: 50%;
-				line-height: 2.25em;
-				margin: -1.25em 0 0 -3em;
-				opacity: 0;
-				padding: 0 1.5em;
-				position: absolute;
-				text-align: center;
-				text-decoration: none;
-				top: 50%;
-				white-space: nowrap;
-			}
+		.image.thumb:after {
+			-moz-transition: opacity 0.2s ease-in-out;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
+			border-radius: 0;
+			color: #fff;
+			content: 'View Project';
+			display: inline-block;
+			font-size: 1em;
+			font-family: "Source Serif 4", serif;
+			font-weight: 300;
+			left: 50%;
+			line-height: 2.25em;
+			margin: -1.25em 0 0 -2.1em;
+			opacity: 0;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			white-space: nowrap;
+		}
 
-			.image.thumb:hover:after {
-				opacity: 1.0;
-			}
+		.image.thumb:hover:after {
+			opacity: 0.8;
+		}
 
-			.image.thumb:hover:before {
-				background: url("images/overlay.png"), url("images/overlay.png");
-				opacity: 1.0;
-			}
+		.image.thumb:hover:before {
+			background: #202020;
+			opacity: 0.5;
+		}
 
 		.image img {
 			border-radius: 0.35em;
@@ -2464,8 +2466,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #fcc57c;
+			color: #fcc57c !important;
 		}
 
 		input[type="submit"]:active,
@@ -2473,8 +2475,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #fcc57c;
+			color: #fcc57c !important;
 		}
 
 		input[type="submit"].icon,
@@ -2517,8 +2519,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #fcc57c;
+			border-color: #fcc57c;
 			color: #ffffff !important;
 		}
 
@@ -2526,16 +2528,16 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #fcc57c;
+				border-color: #fcc57c;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #3eb08f;
-				border-color: #3eb08f;
+				background-color: #fcc57c;
+				border-color: #fcc57c;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2566,10 +2568,12 @@ input, select, textarea {
 			margin: 0 0 0.5em 0;
 		}
 
+		/*  !p-font size */
 		.work-item p {
-			font-size: 0.8em;
-			line-height: 1.5em;
+			font-size: 0.85em;
+			line-height: 1em;
 			margin: 0;
+			text-align: justify;
 		}
 
 /* Header */
@@ -2602,7 +2606,7 @@ input, select, textarea {
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
-		text-align: right;
+		text-align: justify;
 		top: 0;
 		width: 35%;
 	}
@@ -2624,23 +2628,36 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
-			color: #ffffff;
+			color: #373737;
+			font-weight: 750;
 		}
 
-		#header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+		#header h2, #header h4, #header h5, #header h6 {
+			color: rgba(255, 255, 255, 0.8);
+			font-family: "Karla", sans-serif;
+			line-height: 1em;
+			font-size: 1em;
+		}
+
+		#header h3 {
+			color: #000000;
+			font-family: "Source Serif 4", serif;
+			line-height: 1em;
+			font-size: 1.1em;
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
-			font-size: 1.35em;
-			line-height: 1.75em;
+			color: rgba(255, 255, 255, 0.8);
+			font-family: "Source Serif 4", serif;
+			font-size: 1.9em;
+			font-weight: 300;
+			line-height: 1em;
 			margin: 0;
 		}
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 7em;
 		}
 
 /* Footer */
@@ -2689,9 +2706,9 @@ input, select, textarea {
 	}
 
 		#main > section {
-			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			border-top: solid 1px #b8b8b8;
+			margin: 2em 0 0 0;
+			padding: 2em 0 0 0;
 		}
 
 			#main > section:first-child {
